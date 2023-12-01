@@ -2,27 +2,39 @@
     --backgroundcolor: #141D2F;
     --brightcolor: #00BEE8;
     --darkcolor: #4B47FF;
+    --bodypaddingleft: 200px;
+    --bodypaddingright: 200px;
 }
 
 
 body {
+    margin: 0px;
     overflow-x: hidden;
     background-color: var(--backgroundcolor);
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    margin-top: 0px;
+}
 
-.filled-line {
-    width: 120px;
+.filled-line-left {
+    width: var(--bodypaddingleft);
     margin-right: 30px;
     background-color: var(--darkcolor);
     height: 4px;
     min-width: 120px;
 }
 
-.text-standard {
-    font-family: 'Poppins', sans-serif;
+.section-container {
+    padding-left: var(--bodypaddingleft);
+    padding-right: var(--bodypaddingright);
 }
+
+
 
 
 /* poppins-100 - latin */

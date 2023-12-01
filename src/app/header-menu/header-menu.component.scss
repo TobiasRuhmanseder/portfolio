@@ -1,12 +1,9 @@
 .header {
     height: 110px;
     background-color: var(--backgroundcolor);
-    width: calc(100% - 240px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 120px;
-    margin-right: 120px;
 
     img {
         width: 150px;

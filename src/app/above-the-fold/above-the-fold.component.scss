@@ -2,14 +2,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
 
     img {
         padding-top: 5vh;
-        margin-left: 120px;
         height: 70vh;
         border-radius: 0px 0px 0px 200px;
     }
+}
+
+.above-the-fold-image {
+    position: relative;
+    z-index: -2;
 }
 
 .iam-headline {
@@ -20,7 +23,6 @@
 }
 
 .text-content {
-    margin-right: 120px;
     margin-top: -100px;
     width: max-content;
     display: flex;
@@ -29,7 +31,7 @@
     justify-content: center;
 }
 
-.button-container{
+.button-container {
     margin-top: 25px;
 }
 
@@ -93,7 +95,7 @@
     color: white;
     position: absolute;
     bottom: 0px;
-    right: 120px;
+    right: var(--bodypaddingright);
     font-size: 23px;
     display: flex;
     rotate: 90deg;
@@ -116,16 +118,15 @@
 .background-bow {
     position: absolute;
     height: 60vh;
-    top: 58%;
+    top: 54%;
     left: -85px;
-    z-index: 0;
+    z-index: -1;
     rotate: 8deg;
     overflow: hidden;
 
-
     img {
         min-width: 104vw;
-
+        overflow: hidden;
     }
 }
 

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
 import { AboveTheFoldComponent } from './above-the-fold/above-the-fold.component';
 import { ButtonBrightComponent } from './button-bright/button-bright.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { ButtonBrightComponent } from './button-bright/button-bright.component';
     HeaderMenuComponent,
     AboveTheFoldComponent,
     ButtonBrightComponent,
+    AboutMeComponent,
+    MySkillsComponent,
   ],
   imports: [
     BrowserModule,
