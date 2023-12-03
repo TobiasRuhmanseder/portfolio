@@ -16,6 +16,7 @@
 }
 
 .iam-headline {
+    margin-bottom: -20px;
     display: flex;
     align-items: center;
     height: max-content;
@@ -30,11 +31,6 @@
     flex-direction: column;
     justify-content: center;
 }
-
-.button-container {
-    margin-top: 25px;
-}
-
 
 .text-horizontal-container {
     display: flex;
@@ -59,7 +55,6 @@
     margin-right: -10px;
     font-size: 64px;
     rotate: 270deg;
-
 }
 
 .social-section {

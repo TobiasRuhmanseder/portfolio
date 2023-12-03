@@ -33,6 +33,7 @@
     }
 
     img {
+        width: 70px;
         transition: all 125ms ease-in-out;
 
         &:hover {
@@ -40,4 +41,46 @@
             transform: translateY(-10px);
         }
     }
+}
+
+.section-right {
+    padding-top: 40px;
+    display: flex;
+}
+
+.content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.headline {
+    height: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.content-above {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.skills-description {
+    width: 650px;
+    padding-right: calc(var(--bodypaddingright) + 60px);
+    margin-top: 40px;
+
+
+    span{
+        padding-left: 130px;
+    }
+}
+
+.test{
+    width: 405px;
+    object-fit: contain;
 }

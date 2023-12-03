@@ -1,3 +1,8 @@
+.button-container {
+    margin-top: 40px;
+    padding: 15px 30px 15px 30px;
+}
+
 .button-bright {
     text-decoration: none;
     cursor: pointer;
@@ -10,12 +15,12 @@
     transition: all 225ms ease-in-out;
 
 
-    &:hover{
+    &:hover {
         background-color: var(--darkcolor);
         transition: all 225ms ease-in-out;
     }
 
-    &:active{
+    &:active {
         background-color: white;
         color: black;
         transition: all 125ms ease-in-out;

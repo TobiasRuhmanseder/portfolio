@@ -6,6 +6,10 @@
     --bodypaddingright: 200px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     margin: 0px;
@@ -20,6 +24,11 @@ h1 {
     font-weight: 700;
     margin-top: 0px;
     color: white;
+    margin-bottom: 40px;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
 }
 
 .filled-line-left {
@@ -27,7 +36,13 @@ h1 {
     margin-right: 30px;
     background-color: var(--darkcolor);
     height: 4px;
-    min-width: 120px;
+}
+
+.filled-line-right {
+    width: var(--bodypaddingright);
+    margin-left: 60px;
+    background-color: var(--darkcolor);
+    height: 4px;
 }
 
 .section-container {
