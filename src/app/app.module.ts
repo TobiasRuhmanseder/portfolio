@@ -8,6 +8,10 @@ import { AboveTheFoldComponent } from './above-the-fold/above-the-fold.component
 import { ButtonBrightComponent } from './button-bright/button-bright.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectComponent } from './project/project.component';
+import { ButtonDarkComponent } from './button-dark/button-dark.component';
+import { ButtonTransparentComponent } from './button-transparent/button-transparent.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +21,10 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
     ButtonBrightComponent,
     AboutMeComponent,
     MySkillsComponent,
+    PortfolioComponent,
+    ProjectComponent,
+    ButtonDarkComponent,
+    ButtonTransparentComponent,
   ],
   imports: [
     BrowserModule,

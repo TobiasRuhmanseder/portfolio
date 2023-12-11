@@ -118,9 +118,11 @@
     z-index: -1;
     rotate: 8deg;
     overflow: hidden;
+    object-fit: cover;
 
     img {
-        min-width: 104vw;
+        object-fit: fill;
+        min-width: 105vw;
         overflow: hidden;
     }
 }

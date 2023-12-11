@@ -1,0 +1,59 @@
+.project {
+    padding-right: var(--bodypdaddingleft);
+    width: calc(100% - var(--bodypaddingleft));
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 300px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+
+    img {
+        width: 400px;
+        margin-top: -50px;
+    }
+}
+
+.text-container {
+    width: 515px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.project-name {
+    color: var(--darkcolor);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.compositions {
+    color: var(--brightcolor);
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.distance {
+    width: 80px;
+}
+
+.other-direction {
+    flex-direction: row-reverse;
+    padding-right: 0px !important;
+    padding-left: var(--bodypaddingright);
+}

@@ -1,0 +1,21 @@
+<div class="flex-box" data-aos="fade-left">
+    <div class="content-left">
+        <div class="emty-area"></div>
+        <div class="short-line line"></div>
+    </div>
+    <div class="content-middle">
+        <h1 class="headline">Portfolio</h1>
+    </div>
+    <div class="content-right">
+        <div class="long-line line"></div>
+    </div>
+</div>
+
+<div class="description-text" data-aos="fade-right">
+    <span> This page is a sample of my work - please feel free to try them out.</span>
+</div>
+
+<div style="height: 200px;"></div>
+<app-project *ngFor="let project of projects; let i = index" [project]="project"></app-project>
+
+<div style="height: 200px;"></div>

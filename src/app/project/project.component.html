@@ -1,0 +1,15 @@
+<div class="project" [class.other-direction]="project.otherDirection" data-aos="{{aosSide}}">
+    <div class="image-container">
+        <img src="../../assets/img/projects/{{project.img}}" alt="">
+    </div>
+    <div class="text-container">
+        <span class="project-name">{{project.name}}</span>
+        <span class="compositions">{{project.comp}}</span>
+        <span class="description">{{project.description}}</span>
+        <div class="button-container">
+            <app-button-dark href="{{project.github}}">Live test</app-button-dark>
+            <div class="distance"></div>
+            <app-button-transparent href="{{project.projectLink}}">Github</app-button-transparent>
+        </div>
+    </div>
+</div>
