@@ -1,4 +1,4 @@
-<div class="project" [class.other-direction]="project.otherDirection" data-aos="{{aosSide}}">
+<div class="project" [class.other-direction]="project.otherDirection" [attr.data-aos]="aosSide">
     <div class="image-container">
         <img src="../../assets/img/projects/{{project.img}}" alt="">
     </div>
@@ -7,9 +7,9 @@
         <span class="compositions">{{project.comp}}</span>
         <span class="description">{{project.description}}</span>
         <div class="button-container">
-            <app-button-dark href="{{project.github}}">Live test</app-button-dark>
+            <app-button-dark [href]="project.projectLink">Live test</app-button-dark>
             <div class="distance"></div>
-            <app-button-transparent href="{{project.projectLink}}">Github</app-button-transparent>
+            <app-button-transparent [href]="project.github">Github</app-button-transparent>
         </div>
     </div>
 </div>

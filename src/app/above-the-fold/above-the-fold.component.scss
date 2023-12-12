@@ -113,16 +113,16 @@
 .background-bow {
     position: absolute;
     height: 60vh;
+    width: 100%;
     top: 54%;
-    left: -85px;
     z-index: -1;
-    rotate: 8deg;
+    rotate: 0deg;
     overflow: hidden;
     object-fit: cover;
 
     img {
-        object-fit: fill;
-        min-width: 105vw;
+
+        min-width: 100%;
         overflow: hidden;
     }
 }
