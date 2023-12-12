@@ -12,6 +12,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectComponent } from './project/project.component';
 import { ButtonDarkComponent } from './button-dark/button-dark.component';
 import { ButtonTransparentComponent } from './button-transparent/button-transparent.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ButtonTransparentComponent } from './button-transparent/button-transpar
     ProjectComponent,
     ButtonDarkComponent,
     ButtonTransparentComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
