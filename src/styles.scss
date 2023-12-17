@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.d-none{
+    display: none;
+}
+
 
 body {
     margin: 0px;
@@ -27,19 +31,28 @@ h1 {
     margin-bottom: 40px;
 }
 
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0px;
+    color: white;
+    margin-bottom: 20px;
+}
+
 .no-margin-bottom {
     margin-bottom: 0 !important;
 }
 
 .filled-line-left {
-    width: var(--bodypaddingleft);
-    margin-right: 30px;
+    width: calc(var(--bodypaddingleft) - 60px);
+    margin-right: 60px;
     background-color: var(--darkcolor);
     height: 4px;
 }
 
 .filled-line-right {
-    width: var(--bodypaddingright);
+    width: calc(var(--bodypaddingright) - 60px);
     margin-left: 60px;
     background-color: var(--darkcolor);
     height: 4px;

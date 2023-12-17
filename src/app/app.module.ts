@@ -13,6 +13,7 @@ import { ProjectComponent } from './project/project.component';
 import { ButtonDarkComponent } from './button-dark/button-dark.component';
 import { ButtonTransparentComponent } from './button-transparent/button-transparent.component';
 import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,10 +28,12 @@ import { ContactComponent } from './contact/contact.component';
     ButtonDarkComponent,
     ButtonTransparentComponent,
     ContactComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

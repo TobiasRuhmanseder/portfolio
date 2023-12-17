@@ -3,5 +3,60 @@
         <div class="filled-line-left"></div>
         <h1>Contact</h1>
     </div>
+    <div class="contact-content">
+        <div class="content-left">
+            <h2>Got a problem to solve?</h2>
+            <span>
+                Contact me through this form, I am interested in hearing
+                you, knowing your ideas and constributing to your projects
+                with my work.
+                <br>
+                <br>
+                Need a Frontend developer? <b>Contact me!</b>
+            </span>
+        </div>
+        <div class="content-right">
+            <form (ngSubmit)="submitForm()" #form="ngForm">
+                <div class="input-container">
+                    <input [(ngModel)]="formData.name" #nameInput="ngModel" placeholder="Your Name" name="name"
+                        type="text" required minlength="3" [class.input-valid]="nameInput.valid" id="name">
+                    <img *ngIf="nameInput.valid" src="../../assets/img/green_hook.png" alt="">
+                    <div class="error-required">
+                        <p *ngIf="nameInput.invalid && disableButton">Your name is required</p>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input [(ngModel)]="formData.email" #emailInput="ngModel" placeholder="Your email" type="email"
+                        name="email" [class.input-valid]="emailInput.valid" required email>
+                    <img *ngIf="emailInput.valid" src="../../assets/img/green_hook.png" alt="">
+                    <div class="error-required">
+                        <p *ngIf="emailInput.invalid && disableButton">Your email is required</p>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <textarea class="input-container" [(ngModel)]="formData.message" #messageInput="ngModel"
+                        placeholder="Your message" name="message" id="" required minlength="5" cols="30" rows="10"
+                        [class.input-valid]="messageInput.valid"></textarea>
+                    <img *ngIf="messageInput.valid" src="../../assets/img/green_hook.png" alt="">
+                    <div class="error-required">
+                        <p *ngIf="messageInput.invalid && disableButton">Your email is required</p>
+                    </div>
+                </div>
+                <label for="privacy-policy">
+                    <input type="checkbox" [(ngModel)]="formData.checkbox" required name="checkbox"
+                        #checkboxInput="ngModel">
+                    I've read the
+                    <a href="">privacy-policy </a>
+                    and agree to the processing of my data as outlined.
+                </label>
+                <div class="error-required">
+                    <p *ngIf="checkboxInput.invalid && disableButton">Please accept the privacy policy</p>
+                </div>
 
+                <div class="button-container" (click)="disableButtonClick()">
+                    <button type="submit" [disabled]="form.invalid">test</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>

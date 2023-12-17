@@ -38,14 +38,14 @@
 }
 
 .name {
-    font-size: 65px;
+    font-size: 62px;
     font-weight: 700;
 }
 
 
 .job {
     color: var(--darkcolor);
-    font-size: 70px;
+    font-size: 66px;
     font-weight: 200;
     margin-top: -15px;
 }
@@ -53,7 +53,7 @@
 .text-first {
     height: max-content;
     margin-right: -10px;
-    font-size: 64px;
+    font-size: 62px;
     rotate: 270deg;
 }
 
@@ -125,6 +125,10 @@
         min-width: 100%;
         overflow: hidden;
     }
+}
+
+.excessive-width{
+width: var(--bodypaddingleft) !important;
 }
 
 @keyframes animateScrollDown {
