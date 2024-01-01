@@ -5,7 +5,7 @@ import { Component, Input, OnChanges, OnInit, ViewChild } from '@angular/core';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnChanges {
+export class ContactComponent {
   @ViewChild('nameInput') nameInput?: any;
   @ViewChild('emailInput') emailInput?: any;
   @ViewChild('messageInput') messageInput?: any;
@@ -17,17 +17,19 @@ export class ContactComponent implements OnChanges {
     checkbox: false
   }
   @Input() disableButton: boolean = false;
+  public sendMessage: boolean = false;
 
   disableButtonClick() {
     if (this.nameInput.invalid || this.emailInput.invalid || this.messageInput.invalid || this.checkboxInput.invalid) this.disableButton = true;
   }
 
-  submitForm() {
+  async submitForm() {
     console.log('test');
-  }
 
-  ngOnChanges() {
-    console.log(this.formData.name);
-    console.log('Hallo');
+    await fetch('https://tobias-ruhmanseder.com/send_mail.php'),
+    {
+      method:'POST',
+      body: this.formData
+    }
   }
 }

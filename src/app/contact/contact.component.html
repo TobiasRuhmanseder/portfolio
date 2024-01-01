@@ -16,7 +16,7 @@
             </span>
         </div>
         <div class="content-right">
-            <form (ngSubmit)="submitForm()" #form="ngForm">
+            <form (ngSubmit)="submitForm()" action="../../../send_mail.php" #form="ngForm">
                 <div class="input-container">
                     <input [(ngModel)]="formData.name" #nameInput="ngModel" placeholder="Your Name" name="name"
                         type="text" required minlength="3" [class.input-valid]="nameInput.valid" id="name">
@@ -53,9 +53,16 @@
                     <p *ngIf="checkboxInput.invalid && disableButton">Please accept the privacy policy</p>
                 </div>
 
-                <div class="button-container" (click)="disableButtonClick()">
-                    <button type="submit" [disabled]="form.invalid">test</button>
+                <div class="button-container">
+                    <button
+                        *ngIf="!messageInput.invalid && !nameInput.invalid && !emailInput.invalid && !checkboxInput.invalid"
+                        class="button-submit" type="submit">Send message</button>
+                    <button
+                        *ngIf="messageInput.invalid || nameInput.invalid || emailInput.invalid || checkboxInput.invalid"
+                        class="button-submit-disabled" (click)="disableButtonClick()">Send message</button>
+
                 </div>
+                <p *ngIf="!sendMessage"> Test TEXT</p>
             </form>
         </div>
     </div>

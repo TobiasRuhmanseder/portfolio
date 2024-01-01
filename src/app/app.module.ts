@@ -14,6 +14,7 @@ import { ButtonDarkComponent } from './button-dark/button-dark.component';
 import { ButtonTransparentComponent } from './button-transparent/button-transparent.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { ButtonSubmitComponent } from './button-submit/button-submit.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     ButtonDarkComponent,
     ButtonTransparentComponent,
     ContactComponent,
+    ButtonSubmitComponent,
 
   ],
   imports: [
