@@ -1,0 +1,9 @@
+.go-top {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: calc(100% - var(--bodypaddingleft) - var(--bodypaddingright));
+    padding-left: var(--bodypaddingleft);
+    padding-right: var(--bodypaddingright);
+    display: flex;
+    justify-content: flex-end;
+}

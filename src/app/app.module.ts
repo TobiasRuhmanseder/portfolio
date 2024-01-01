@@ -15,7 +15,10 @@ import { ButtonTransparentComponent } from './button-transparent/button-transpar
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { ButtonSubmitComponent } from './button-submit/button-submit.component';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { GoToTheTopComponent } from './go-to-the-top/go-to-the-top.component';
+import { FooterComponent } from './footer/footer.component';
+import { BackgroundImagesComponent } from './background-images/background-images.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,12 +33,17 @@ import { ButtonSubmitComponent } from './button-submit/button-submit.component';
     ButtonTransparentComponent,
     ContactComponent,
     ButtonSubmitComponent,
+    GoToTheTopComponent,
+    FooterComponent,
+    BackgroundImagesComponent,
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

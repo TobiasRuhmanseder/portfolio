@@ -79,11 +79,16 @@
     }
 
     a {
-        margin-left: 30px;
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: white;
         font-size: 23px;
     }
+}
+
+.email-text {
+    margin-left: 30px;
 }
 
 .scroll-container {
@@ -127,8 +132,8 @@
     }
 }
 
-.excessive-width{
-width: var(--bodypaddingleft) !important;
+.excessive-width {
+    width: var(--bodypaddingleft) !important;
 }
 
 @keyframes animateScrollDown {

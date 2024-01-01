@@ -71,16 +71,16 @@
 
 .skills-description {
     width: 650px;
-    padding-right: calc(var(--bodypaddingright) + 60px);
+    padding-right: calc(var(--bodypaddingright));
     margin-top: 40px;
 
 
-    span{
+    span {
         padding-left: 130px;
     }
 }
 
-.test{
+.test {
     width: 405px;
     object-fit: contain;
 }

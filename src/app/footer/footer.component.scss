@@ -1,0 +1,43 @@
+.footer {
+    height: 290px;
+    padding-left: var(--bodypaddingleft);
+    padding-right: var(--bodypaddingright);
+    width: calc(100% - var(--bodypaddingleft) - var(--bodypaddingright));
+    background-color: var(--backgroundcolor);
+    border-top: 3px solid var(--brightcolor);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-middle {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        color: white;
+        font-size: 24px;
+    }
+}
+
+.content-left {
+
+    img {
+        height: 40px;
+    }
+}
+
+.content-right {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.impressum{
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}

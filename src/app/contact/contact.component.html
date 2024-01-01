@@ -1,10 +1,10 @@
 <div class="contact">
-    <div class="headline">
+    <div class="headline" data-aos="fade-right" >
         <div class="filled-line-left"></div>
         <h1>Contact</h1>
     </div>
     <div class="contact-content">
-        <div class="content-left">
+        <div class="content-left" data-aos="fade-right" data-aos-offset="140">
             <h2>Got a problem to solve?</h2>
             <span>
                 Contact me through this form, I am interested in hearing
@@ -15,7 +15,7 @@
                 Need a Frontend developer? <b>Contact me!</b>
             </span>
         </div>
-        <div class="content-right">
+        <div class="content-right" data-aos="fade-left" data-aos-offset="140">
             <form (ngSubmit)="submitForm()" action="../../../send_mail.php" #form="ngForm">
                 <div class="input-container">
                     <input [(ngModel)]="formData.name" #nameInput="ngModel" placeholder="Your Name" name="name"
@@ -55,15 +55,19 @@
 
                 <div class="button-container">
                     <button
-                        *ngIf="!messageInput.invalid && !nameInput.invalid && !emailInput.invalid && !checkboxInput.invalid"
+                        *ngIf="!messageInput.invalid && !nameInput.invalid && !emailInput.invalid && !checkboxInput.invalid && !hideButton"
                         class="button-submit" type="submit">Send message</button>
-                    <button
+                    <button type="button"
                         *ngIf="messageInput.invalid || nameInput.invalid || emailInput.invalid || checkboxInput.invalid"
                         class="button-submit-disabled" (click)="disableButtonClick()">Send message</button>
-
+                    <div class="loading-animation">
+                        <mat-spinner *ngIf="messageLoading" class="spinner"></mat-spinner>
+                        <p *ngIf="messageSent" class="message-sent-text">Message has been sent</p>
+                    </div>
                 </div>
-                <p *ngIf="!sendMessage"> Test TEXT</p>
+
             </form>
+
         </div>
     </div>
 </div>
