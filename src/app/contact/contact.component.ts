@@ -26,7 +26,7 @@ export class ContactComponent {
   async submitForm() {
     console.log('test');
 
-    await fetch('https://tobias-ruhmanseder.com/send_mail.php'),
+    await fetch('https://portfolio.tobias-ruhmanseder.com/send_mail.php'),
     {
       method:'POST',
       body: this.formData
