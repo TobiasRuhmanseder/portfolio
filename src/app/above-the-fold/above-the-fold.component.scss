@@ -1,4 +1,5 @@
 .above-the-fold {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,13 +7,21 @@
     img {
         padding-top: 5vh;
         height: 70vh;
-        border-radius: 0px 0px 0px 200px;
+        border-radius: 0px 0px 0px 80px;
     }
 }
 
 .above-the-fold-image {
     position: relative;
-    z-index: -2;
+    z-index: 1;
+}
+
+.shadow1 {
+    width: 40%;
+    position: absolute;
+    top: 8%;
+    left: 1%;
+    z-index: 0;
 }
 
 .iam-headline {
@@ -120,7 +129,7 @@
     height: 60vh;
     width: 100%;
     top: 54%;
-    z-index: -1;
+    z-index: 2;
     rotate: 0deg;
     overflow: hidden;
     object-fit: cover;

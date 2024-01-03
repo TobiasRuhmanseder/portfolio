@@ -4,7 +4,7 @@
 ########### CONFIG ###############
 
 $recipient = 'tobi.r1707@gmail.com'; # Bitte hier deine E-Mail angeben
-$redirect = '';
+//$redirect = '';
 
 ########### CONFIG END ###########
 
@@ -37,15 +37,16 @@ if (empty($recipient)) {
 
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.
+        header('Access-Control-Allow-Origin: *');
         header("Access-Control-Allow-Headers: content-type");
         exit;
     case ("POST"): //Send the email;
 
         $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  noreply@developerakademie.com";
+        $headers = "From:  mail@tobias-ruhmanseder.com";
 
         mail($recipient, $subject, $_POST['message'], $headers);
-        header("Location: " . $redirect); 
+        //header("Location: " . $redirect); 
 
         break;
     default: //Reject any non POST or OPTIONS requests.

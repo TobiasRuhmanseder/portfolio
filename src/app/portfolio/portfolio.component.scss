@@ -1,4 +1,9 @@
+.portfolio {
+    position: relative;
+}
+
 .flex-box {
+
     height: max-content;
     margin: 0 !important;
     width: 100%;
@@ -41,9 +46,18 @@
     height: 4px;
 }
 
-.description-text{
+.description-text {
     display: flex;
     justify-content: center;
     color: white;
     margin-top: 20px;
+}
+
+.shadow4 {
+    width: 50%;
+    position: absolute;
+    top: 1200px;
+    left: -3%;
+    z-index: -1;
+    rotate: 0deg;
 }

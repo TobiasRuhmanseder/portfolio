@@ -1,3 +1,7 @@
+.contact {
+    position: relative;
+}
+
 .headline {
     display: flex;
     align-items: center;
@@ -221,3 +225,11 @@ input:-webkit-autofill:active {
     }
 }
 
+.shadow5 {
+    width: 1000px;
+    position: absolute;
+    top: -650px;
+    right: -300px;
+    z-index: -1;
+    rotate: 70deg;
+}

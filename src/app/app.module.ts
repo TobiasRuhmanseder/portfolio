@@ -18,7 +18,7 @@ import { ButtonSubmitComponent } from './button-submit/button-submit.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { GoToTheTopComponent } from './go-to-the-top/go-to-the-top.component';
 import { FooterComponent } from './footer/footer.component';
-import { BackgroundImagesComponent } from './background-images/background-images.component';
+import { ImprintComponent } from './imprint/imprint.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +35,7 @@ import { BackgroundImagesComponent } from './background-images/background-images
     ButtonSubmitComponent,
     GoToTheTopComponent,
     FooterComponent,
-    BackgroundImagesComponent,
+    ImprintComponent,
 
 
   ],

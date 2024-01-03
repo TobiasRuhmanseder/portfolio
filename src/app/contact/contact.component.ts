@@ -30,14 +30,17 @@ export class ContactComponent {
   }
 
   async submitForm() {
-    console.log('test');
+    let fd = new FormData();
+    fd.append('name', this.formData.name);
+    fd.append('message', this.formData.message);
+    console.log(fd);
 
     this.messageLoading = true;
     this.hideButton = true;
     await fetch('https://portfolio.tobias-ruhmanseder.com/send_mail.php'),
     {
       method: 'POST',
-      body: this.formData
+      body: fd
     }
     this.notificationChange();
   }

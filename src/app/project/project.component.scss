@@ -1,4 +1,6 @@
 .project {
+    position: relative;
+    z-index: 2;
     padding-right: var(--bodypdaddingleft);
     width: calc(100% - var(--bodypaddingleft));
     display: flex;

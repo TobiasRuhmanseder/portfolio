@@ -1,4 +1,5 @@
 .about-me {
+    position: relative;
     margin-top: 300px;
     margin-bottom: 300px;
     z-index: 99;
@@ -13,7 +14,7 @@
     width: 35%;
 }
 
-.right-section{
+.right-section {
     display: flex;
     align-items: center;
 }
@@ -56,4 +57,13 @@
     width: calc(var(--bodypaddingright) + 80px);
     height: 4px;
     background-color: var(--brightcolor);
+}
+
+.shadow2 {
+    width: 800px;
+    position: absolute;
+    top: -400px;
+    right: -400px;
+    z-index: -1;
+    rotate: -10deg;
 }
