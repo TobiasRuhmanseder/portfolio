@@ -59,11 +59,16 @@
     background-color: var(--brightcolor);
 }
 
+.right-section{
+    position: relative;
+    z-index: 2;
+}
+
 .shadow2 {
     width: 800px;
     position: absolute;
     top: -400px;
     right: -400px;
-    z-index: -1;
+    z-index: 1;
     rotate: -10deg;
 }
