@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core/dist/lib/translate.service';
 import AOS from 'aos';
 
 
