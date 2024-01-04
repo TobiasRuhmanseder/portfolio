@@ -1,4 +1,6 @@
-.imprint {
+.data-protection {
+    padding-left: var(--bodypaddingleft);
+    padding-right: var(--bodypaddingright);
     margin-top: 80px;
     min-height: 70%;
     display: flex;
@@ -9,5 +11,4 @@
     a{
         color: white;
     }
-
 }

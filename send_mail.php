@@ -37,15 +37,13 @@ if (empty($recipient)) {
 
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.
-        header('Access-Control-Allow-Origin: *');
-        header("Access-Control-Allow-Headers: content-type");
         exit;
     case ("POST"): //Send the email;
 
         $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  mail@tobias-ruhmanseder.com";
+        $headers = "From:  Portfolio";
 
-        mail($recipient, $subject, $_POST['message'], $headers);
+        mail($recipient, $subject, $_POST['email'],$_POST['message'], $headers);
         //header("Location: " . $redirect); 
 
         break;

@@ -19,6 +19,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { GoToTheTopComponent } from './go-to-the-top/go-to-the-top.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { MainWebsiteComponent } from './main-website/main-website.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +38,8 @@ import { ImprintComponent } from './imprint/imprint.component';
     GoToTheTopComponent,
     FooterComponent,
     ImprintComponent,
+    MainWebsiteComponent,
+    DataProtectionComponent,
 
 
   ],
