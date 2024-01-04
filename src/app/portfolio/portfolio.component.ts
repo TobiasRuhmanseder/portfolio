@@ -14,7 +14,7 @@ export class PortfolioComponent {
       description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
       img: 'pokedex.png',
       github: 'https://github.com/TobiasRuhmanseder/Pokedex---API-exercise',
-      projectLink: 'https://google.de',
+      projectLink: 'https://www.pokedex.tobias-ruhmanseder.com/index.html',
       otherDirection: false,
     },
     {
@@ -23,7 +23,7 @@ export class PortfolioComponent {
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       img: 'join_re.png',
       github: 'https://github.com/TobiasRuhmanseder/join',
-      projectLink: 'https://google.de',
+      projectLink: 'https://join.tobias-ruhmanseder.com/index.html',
       otherDirection: true,
     },
     {
@@ -32,7 +32,7 @@ export class PortfolioComponent {
       description: 'A simple Jump-and-Run game based on an object-oriented approach. Help pepe to find coins and salsa bottles to fight against the big hen.',
       img: 'el_pollo.png',
       github: 'https://github.com/TobiasRuhmanseder/JS-Game-El-Pollo-Locco',
-      projectLink: 'https://google.de',
+      projectLink: 'https://el-pollo-loco.tobias-ruhmanseder.com/index.html',
       otherDirection: false,
     },
     {
@@ -41,7 +41,7 @@ export class PortfolioComponent {
       description: 'A well-known and simple card game based on Angular. Through Firebase you can even play with friends over the Internet.',
       img: 'ringoffire_re.png',
       github: 'https://github.com/TobiasRuhmanseder/ringoffire',
-      projectLink: 'https://google.de',
+      projectLink: 'https://www.ring-of-fire.tobias-ruhmanseder.com/',
       otherDirection: true,
     },
   ]

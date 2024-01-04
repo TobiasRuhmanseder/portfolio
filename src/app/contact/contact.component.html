@@ -16,7 +16,7 @@
             </span>
         </div>
         <div class="content-right" data-aos="fade-left" data-aos-offset="140">
-            <form (ngSubmit)="submitForm()" action="../../../send_mail.php" #form="ngForm">
+            <form (ngSubmit)="submitForm()" #form="ngForm">
                 <div class="input-container">
                     <input [(ngModel)]="formData.name" #nameInput="ngModel" placeholder="Your Name" name="name"
                         type="text" required minlength="3" [class.input-valid]="nameInput.valid" id="name">
