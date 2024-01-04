@@ -18,7 +18,7 @@
         <div class="content-right" data-aos="fade-left" data-aos-offset="140">
             <form (ngSubmit)="submitForm()" #form="ngForm">
                 <div class="input-container">
-                    <input [(ngModel)]="formData.name" #nameInput="ngModel" placeholder="Your Name" name="name"
+                    <input [(ngModel)]="formData.name" #nameInput="ngModel" placeholder="{{ 'Your Name' | translate }}" name="name"
                         type="text" required minlength="3" [class.input-valid]="nameInput.valid" id="name">
                     <img *ngIf="nameInput.valid" src="../../assets/img/green_hook.png" alt="">
                     <div class="error-required">
