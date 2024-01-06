@@ -1,5 +1,7 @@
 <div id="skills" class="my-skills">
+
     <div class="skill-icons" data-aos="fade-right">
+
         <div class="icon-container">
             <img src="../../assets/img/skills_icon/Angular.svg" alt="">
             <p>Angular</p>
@@ -41,20 +43,22 @@
             <p>Material design</p>
         </div>
     </div>
+
     <div class="section-right" data-aos="fade-left">
         <div class="content">
             <div class="content-above">
                 <div class="headline">
-                    <h1 class="no-margin-bottom">My skills</h1>
+                    <h1 class="no-margin-bottom">{{ 'My Skills'| translate }}</h1>
                     <div class="filled-line-right"></div>
                 </div>
 
                 <div class="skills-description">
-                    <span>I have grown my frontend development skills that have allowed me to create different real
-                        projects.</span>
+                    <span>{{ 'skills text'| translate }}</span>
+                    <app-button-bright class="button-pos" href="#contact">{{ 'Get in touch'| translate
+                        }}</app-button-bright>
                 </div>
             </div>
-            <app-button-bright href="#contact">Get in touch</app-button-bright>
+
         </div>
 
     </div>

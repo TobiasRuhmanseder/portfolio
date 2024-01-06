@@ -12,12 +12,10 @@
         </div>
     </div>
     <div class="description-text" data-aos="fade-right" data-aos-offset="190">
-        <span> This page is a sample of my work - please feel free to try them out.</span>
+        <span>{{ 'portfolio text'| translate }} </span>
     </div>
 
-    <div style="height: 200px;"></div>
+    <div class="space-between-column"></div>
     <app-project *ngFor="let project of projects; let i = index" [project]="project"></app-project>
-
-    <div style="height: 200px;"></div>
     <img class="shadow4" src="../../assets/img/backgrounds/shadow4.svg" alt="">
 </div>

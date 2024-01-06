@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    z-index: 99;
     height: 110px;
     background-color: var(--backgroundcolor);
     display: flex;
@@ -7,10 +9,15 @@
 
     img {
         width: 150px;
+
+        @media (max-width: 767px) {
+            width: 125px;
+        }
+
     }
 
     nav {
-        width: 360px;
+        width: 450px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -27,6 +34,40 @@
                 transition: all 225ms ease-in-out;
                 ;
             }
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            width: 380px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            width: 350px;
+        }
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+    }
+
+    .language {
+        font-size: 16px;
+
+        span {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: white;
+            font-weight: 400;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
         }
     }
 

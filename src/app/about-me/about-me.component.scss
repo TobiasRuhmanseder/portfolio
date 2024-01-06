@@ -1,6 +1,6 @@
 .about-me {
     position: relative;
-    margin-top: 300px;
+    margin-top: 0px;
     margin-bottom: 300px;
     z-index: 99;
     color: white;
@@ -8,20 +8,60 @@
     align-items: center;
     justify-content: space-between;
     padding-right: 0px !important;
+
+    @media (max-width: 1270px) {
+        margin-bottom: 150px;
+    }
 }
 
 .left-section {
     width: 35%;
+    position: relative;
+    z-index: 3;
+
+    @media (max-width: 1470px) {
+        width: 40%;
+    }
+
+    @media (max-width: 1270px) {
+        width: 45%;
+    }
+
+    @media (max-width: 767px) {
+        width: calc(100% - var(--bodypaddingright) - var(--bodypaddingleft));
+    }
+
+    span {
+        @media (max-width: 1470px) {
+            font-size: 14px;
+        }
+    }
 }
 
 .right-section {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+
 }
 
 .description {
     img {
         padding: 5px 30px 0px 30px;
+
+        @media (max-width: 1470px) {
+            padding: 5px 20px 0px 20px;
+        }
+
+        @media (max-width: 767px) {
+            width: 30px;
+            padding: 5px 15px 0px 0px;
+        }
     }
 }
 
@@ -51,24 +91,45 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-position-y: 100%;
+
+    @media (max-width: 1470px) {
+        width: 400px;
+        height: 400px;
+        background-size: 320px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 300px;
+        height: 300px;
+        background-size: 250px;
+    }
 }
 
 .borderline-right {
     width: calc(var(--bodypaddingright) + 80px);
     height: 4px;
     background-color: var(--brightcolor);
-}
 
-.right-section{
-    position: relative;
-    z-index: 2;
+    @media (max-width: 1270px) {
+        width: calc(var(--bodypaddingright) + 20px);
+    }
+
+    @media (max-width: 1023px) {
+        width: calc(var(--bodypaddingright));
+    }
 }
 
 .shadow2 {
     width: 800px;
     position: absolute;
-    top: -400px;
+    top: -150px;
     right: -400px;
     z-index: 1;
     rotate: -10deg;
+
+    @media (max-width: 1023px) {
+        width: 400px;
+        right: -200px;
+        top: -100px;
+    }
 }

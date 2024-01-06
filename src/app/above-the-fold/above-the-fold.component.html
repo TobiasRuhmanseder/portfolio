@@ -1,9 +1,11 @@
 <div class="above-the-fold section-container">
-    <img class="above-the-fold-image" src="../../assets/img/me01.png" data-aos="fade-right" data-aos-duration="1500">
+    <img class="above-the-fold-image" src="../../assets/img/me01_small.png" data-aos="fade-right"
+        data-aos-duration="1500">
     <img class="shadow1" src="../../assets/img/backgrounds/shadow1.svg" alt="">
-    <div class="text-content" data-aos="fade-left" data-aos-duration="1500">
+    <div class="text-content" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="-5000">
         <div class="iam-headline">
-            <div class="text-first" data-aos="fade-right" data-aos-duration="1500">
+            <div class="text-first" data-aos="fade-right" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1500" data-aos-offset="-5000">
                 <span>I am</span>
             </div>
             <div class="text-horizontal-container">
@@ -11,18 +13,25 @@
                 <span class="job">FRONTEND DEVELOPER</span>
             </div>
         </div>
-        <app-button-bright href="#contact" data-aos="fade-down" data-aos-duration="1200" > <span translate>Let's
-            talk!</span></app-button-bright>
+        <app-button-bright href="#contact" data-aos="fade-down" data-aos-duration="1200"
+            data-aos-anchor-placement="top-center" data-aos-offset="-5000"> <span>
+                {{ 'talk' |
+                translate }}</span></app-button-bright>
     </div>
 </div>
 <div class="social-section">
     <div class="filled-line-left excessive-width"></div>
-    <a href="https://github.com/TobiasRuhmanseder" target="_blank"><img src="../../assets/img/social_buttons/github.svg"
-            alt=""></a>
-    <a href="mailto:mail@tobias-ruhmanseder.com"><img src="../../assets/img/social_buttons/mail.svg" alt=""></a>
-    <a href="https://de.linkedin.com/in/tobias-ruhmanseder-095457237" target="_blank"><img
-            src="../../assets/img/social_buttons/linkedin.svg" alt=""></a>
-    <a class="email-text" href="mailto:mail@tobias-ruhmanseder.com">mail&#64;tobias-ruhmanseder.com</a>
+    <div class="social-icons-container">
+        <a href="https://github.com/TobiasRuhmanseder" target="_blank"><img
+                src="../../assets/img/social_buttons/github.svg" alt=""></a>
+        <a href="mailto:mail@tobias-ruhmanseder.com"><img src="../../assets/img/social_buttons/mail.svg" alt=""></a>
+        <a href="https://de.linkedin.com/in/tobias-ruhmanseder-095457237" target="_blank"><img
+                src="../../assets/img/social_buttons/linkedin.svg" alt=""></a>
+    </div>
+    <div class="email-text">
+        <a href="mailto:mail@tobias-ruhmanseder.com">mail&#64;tobias-ruhmanseder.com</a>
+    </div>
+
 </div>
 <div class="scroll-container">
     <span>Scroll down</span>

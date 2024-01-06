@@ -1,13 +1,38 @@
 .above-the-fold {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 100vh;
 
     img {
-        padding-top: 5vh;
-        height: 70vh;
+        padding-top: 100px;
+        height: 700px;
         border-radius: 0px 0px 0px 80px;
+
+        @media (max-width: 1450px) {
+            height: 600px;
+        }
+
+        @media (max-width: 1140px) {
+            height: 600px;
+        }
+
+        @media (max-width: 767px) {
+            //height: 420px;
+            height: 50vh;
+            padding-top: 0px;
+        }
+
+        @media (min-width: 1981px) {
+            height: 1000px;
+        }
+    }
+
+    @media (max-width: 1140px) {
+        height: 500px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
 
@@ -22,9 +47,17 @@
     top: 8%;
     left: 1%;
     z-index: 0;
+
+    @media (max-width: 1140px) {
+        width: 95%;
+        left: 2%;
+        top: 0%;
+    }
 }
 
 .iam-headline {
+    position: relative;
+    z-index: 3;
     margin-bottom: -20px;
     display: flex;
     align-items: center;
@@ -33,12 +66,25 @@
 }
 
 .text-content {
+    position: relative;
+    z-index: 99;
+    margin-left: -30px;
     margin-top: -100px;
     width: max-content;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 1140px) {
+        position: absolute;
+        bottom: 130px;
+    }
+
+    @media (max-width: 767px) {
+        margin-left: -20px;
+        top: 80vh;
+    }
 }
 
 .text-horizontal-container {
@@ -49,21 +95,56 @@
 .name {
     font-size: 62px;
     font-weight: 700;
-}
 
+    @media (max-width: 1780px) {
+        font-size: 55px;
+    }
+
+    @media (max-width: 1300px) {
+        font-size: 45px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 7.2vw;
+    }
+}
 
 .job {
     color: var(--darkcolor);
     font-size: 66px;
     font-weight: 200;
     margin-top: -15px;
+
+    @media (max-width: 1780px) {
+        font-size: 59px;
+    }
+
+    @media (max-width: 1300px) {
+        font-size: 48.5px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 7.7vw;
+    }
 }
 
 .text-first {
-    height: max-content;
+    padding-top: -20px;
     margin-right: -10px;
     font-size: 62px;
     rotate: 270deg;
+
+    @media (max-width: 1780px) {
+        font-size: 52px;
+    }
+
+    @media (max-width: 1300px) {
+        font-size: 42px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 6.2vw;
+    }
 }
 
 .social-section {
@@ -77,13 +158,18 @@
     img {
         margin-left: 30px;
         margin-right: 30px;
-        width: 3vh;
+        width: 30px;
         cursor: pointer;
         transition: all 225ms ease-in-out;
 
         &:hover {
             opacity: 0.85;
             transition: all 225ms ease-in-out;
+        }
+
+        @media (max-width: 767px) {
+            margin-left: 20px;
+            margin-right: 20px;
         }
     }
 
@@ -96,12 +182,25 @@
     }
 }
 
+.social-icons-container {
+    display: flex;
+
+    @media (max-width: 767px) {
+        position: absolute;
+        bottom: -10px;
+        left: calc(50vw - var(--bodypaddingleft) - var(--bodypaddingright) - 90px);
+    }
+}
+
 .email-text {
     margin-left: 30px;
+
+    @media (max-width: 1300px) {
+        display: none;
+    }
 }
 
 .scroll-container {
-
     color: white;
     position: absolute;
     bottom: 0px;
@@ -110,7 +209,7 @@
     display: flex;
     rotate: 90deg;
     transform-origin: top right;
-    z-index: 3;
+    z-index: 99;
     animation: 3000ms animateScrollDown infinite;
 
     img {
@@ -123,27 +222,53 @@
         margin: 0px;
         padding: 0px;
     }
+
+    @media (max-width: 1300px) {
+        display: none;
+    }
 }
 
 .background-bow {
     position: absolute;
-    height: 60vh;
-    width: 100%;
-    top: 54%;
+    min-width: 100%;
+    top: 580px;
     z-index: 2;
     rotate: 0deg;
     overflow: hidden;
-    object-fit: cover;
+
+
+    @media (max-width: 1450px) {
+        top: 520px;
+        height: 500px;
+    }
+
+    @media (max-width: 1279px) {
+        top: 600px;
+        height: 500px;
+    }
+
+    @media (min-width: 1981px) {
+        top: 850px;
+    }
+
+    @media (max-width: 767px) {
+        top: 50vh;
+    }
 
     img {
-
+        width: 100%;
         min-width: 100%;
         overflow: hidden;
+        object-fit: cover;
     }
 }
 
 .excessive-width {
     width: var(--bodypaddingleft) !important;
+
+    @media (max-width: 767px) {
+        width: 12vw !important;
+    }
 }
 
 @keyframes animateScrollDown {

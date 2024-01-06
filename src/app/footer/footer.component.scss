@@ -9,7 +9,14 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @media (max-width: 1023px) {
+        padding-top: 40px;
+        height: 380px;
+        justify-content: flex-start;
+    }
 }
+
 
 .container-middle {
     margin-top: 32px;
@@ -18,9 +25,19 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 180px;
+    }
+
     span {
         color: white;
         font-size: 24px;
+
+        @media (max-width: 1300px) {
+            font-size: 20px;
+        }
     }
 }
 
@@ -28,6 +45,11 @@
 
     img {
         height: 40px;
+
+        @media (max-width: 1023px) {
+            margin-bottom: 40px;
+        }
+
     }
 }
 
@@ -35,10 +57,22 @@
     width: 250px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1023px) {
+        margin-top: 30px;
+    }
 }
 
 .impressum {
+    display: flex;
     padding-left: 10px;
     text-decoration: none;
     color: white;
+
+    @media (max-width: 1023px) {
+        width: 100%;
+        justify-content: center;
+        padding-left: 0px;
+        margin-top: 40px;
+    }
 }

@@ -38,6 +38,11 @@
     margin: 0;
     padding-left: 60px;
     padding-right: 60px;
+
+    @media (max-width: 1024px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .line {
@@ -50,6 +55,12 @@
     justify-content: center;
     color: white;
     margin-top: 20px;
+
+    @media (max-width: 767px) {
+        text-align: center;
+        width: calc(100% - var(--bodypaddingleft) - var(--bodypaddingright));
+        margin-left: var(--bodypaddingleft);
+    }
 }
 
 .shadow4 {
@@ -59,4 +70,19 @@
     left: -3%;
     z-index: -1;
     rotate: 0deg;
+
+    @media (max-width: 1023px) {
+        width: 400px;
+        top: 680px;
+        left: 0px;
+    }
+
+}
+
+.space-between-column {
+    height: 200px;
+
+    @media (max-width: 1024px) {
+        height: 150px;
+    }
 }

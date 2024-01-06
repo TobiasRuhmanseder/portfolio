@@ -1,32 +1,30 @@
 <div id="contact" class="contact">
     <div class="headline" data-aos="fade-right">
         <div class="filled-line-left"></div>
-        <h1>Contact</h1>
+        <h1>{{ 'Contact' | translate }}</h1>
     </div>
     <div class="contact-content">
         <div class="content-left" data-aos="fade-right" data-aos-offset="140">
-            <h2>Got a problem to solve?</h2>
+            <h2> {{ 'Got a problem to solve?' | translate }} </h2>
             <span>
-                Contact me through this form, I am interested in hearing
-                you, knowing your ideas and constributing to your projects
-                with my work.
+                {{ 'contact text1' | translate }}
                 <br>
                 <br>
-                Need a Frontend developer? <b>Contact me!</b>
+                {{ 'contact text2' | translate }} <b>{{ 'Contact me!' | translate }}</b>
             </span>
         </div>
         <div class="content-right" data-aos="fade-left" data-aos-offset="140">
             <form (ngSubmit)="submitForm()" #form="ngForm">
                 <div class="input-container">
-                    <input [(ngModel)]="formData.name" #nameInput="ngModel" placeholder="{{ 'Your Name' | translate }}" name="name"
-                        type="text" required minlength="3" [class.input-valid]="nameInput.valid" id="name">
+                    <input [(ngModel)]="formData.name" #nameInput="ngModel" placeholder="{{ 'Your name' | translate }}"
+                        name="name" type="text" required minlength="3" [class.input-valid]="nameInput.valid" id="name">
                     <img *ngIf="nameInput.valid" src="../../assets/img/green_hook.png" alt="">
                     <div class="error-required">
                         <p *ngIf="nameInput.invalid && disableButton">Your name is required</p>
                     </div>
                 </div>
                 <div class="input-container">
-                    <input [(ngModel)]="formData.email" #emailInput="ngModel" placeholder="Your email" type="email"
+                    <input [(ngModel)]="formData.email" #emailInput="ngModel" placeholder="{{ 'Your email' | translate }}" type="email"
                         name="email" [class.input-valid]="emailInput.valid" required email>
                     <img *ngIf="emailInput.valid" src="../../assets/img/green_hook.png" alt="">
                     <div class="error-required">
@@ -35,7 +33,7 @@
                 </div>
                 <div class="input-container">
                     <textarea class="input-container" [(ngModel)]="formData.message" #messageInput="ngModel"
-                        placeholder="Your message" name="message" id="" required minlength="5" cols="30" rows="10"
+                        placeholder="{{ 'Your message' | translate }}" name="message" id="" required minlength="5" cols="30" rows="10"
                         [class.input-valid]="messageInput.valid"></textarea>
                     <img *ngIf="messageInput.valid" src="../../assets/img/green_hook.png" alt="">
                     <div class="error-required">
@@ -45,9 +43,9 @@
                 <label for="privacy-policy">
                     <input type="checkbox" [(ngModel)]="formData.checkbox" required name="checkbox"
                         #checkboxInput="ngModel">
-                    I've read the
-                    <a routerLink="/data-protection">privacy-policy </a>
-                    and agree to the processing of my data as outlined.
+                    {{ 'I ve read the' | translate }}
+                    <a routerLink="/data-protection">{{ 'privacy-policy' | translate }} </a>
+                    {{ 'and agree to the processing of my data as outlined.' | translate }}
                 </label>
                 <div class="error-required">
                     <p *ngIf="checkboxInput.invalid && disableButton">Please accept the privacy policy</p>
@@ -56,13 +54,14 @@
                 <div class="button-container">
                     <button
                         *ngIf="!messageInput.invalid && !nameInput.invalid && !emailInput.invalid && !checkboxInput.invalid && !hideButton"
-                        class="button-submit" type="submit">Send message</button>
+                        class="button-submit" type="submit">{{ 'Send message' | translate }}</button>
                     <button type="button"
                         *ngIf="messageInput.invalid || nameInput.invalid || emailInput.invalid || checkboxInput.invalid"
-                        class="button-submit-disabled" (click)="disableButtonClick()">Send message</button>
+                        class="button-submit-disabled" (click)="disableButtonClick()">{{ 'Send message' | translate
+                        }}</button>
                     <div class="loading-animation">
                         <mat-spinner *ngIf="messageLoading" class="spinner"></mat-spinner>
-                        <p *ngIf="messageSent" class="message-sent-text">Message has been sent</p>
+                        <p *ngIf="messageSent" class="message-sent-text">{{ 'Message has been sent' | translate }}</p>
                     </div>
                 </div>
             </form>

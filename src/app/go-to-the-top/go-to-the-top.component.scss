@@ -7,6 +7,14 @@
     padding-right: var(--bodypaddingright);
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: 1340px) {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
 }
 
 .shadow6 {
@@ -18,4 +26,10 @@
     overflow: hidden;
     object-fit: cover;
     rotate: 100deg;
+
+    @media (max-width: 767px) {
+        width: 300px;
+        left: -150px;
+        top: -200px;
+    }
 }

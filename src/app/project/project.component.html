@@ -5,7 +5,7 @@
     <div class="text-container">
         <span class="project-name">{{project.name}}</span>
         <span class="compositions">{{project.comp}}</span>
-        <span class="description">{{project.description}}</span>
+        <span class="description">{{project.description | translate}}</span>
         <div class="button-container">
             <app-button-dark [href]="project.projectLink">Live test</app-button-dark>
             <div class="distance"></div>

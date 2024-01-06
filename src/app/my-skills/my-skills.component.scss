@@ -1,3 +1,9 @@
+span {
+    @media (max-width: 1470px) {
+        font-size: 14px !important;
+    }
+}
+
 .my-skills {
     position: relative;
     z-index: 2;
@@ -5,6 +11,13 @@
     margin-bottom: 200px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1340px) {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-left: 0px;
+    }
 }
 
 .skill-icons {
@@ -18,6 +31,27 @@
         width: 88px;
         height: 100px;
     }
+
+    @media (max-width: 1919px) {
+        gap: 50px;
+    }
+
+    @media (max-width: 1340px) {
+        width: calc(100% - var(--bodypaddingleft - --bodypaddingright));
+        padding-left: var(--bodypaddingleft);
+        padding-right: var(--bodypaddingright);
+        gap: 80px;
+        align-items: center;
+    }
+
+    @media (max-width: 767px) {
+        gap: 30px;
+    }
+
+    @media (max-width: 400px) {
+        gap: 3px;
+    }
+
 }
 
 .icon-container {
@@ -32,6 +66,10 @@
     p {
         margin: 0;
         color: white;
+
+        @media (max-width: 767px) {
+            font-size: 4vw;
+        }
     }
 
     img {
@@ -41,6 +79,18 @@
         &:hover {
             transition: all 125ms ease-in-out;
             transform: translateY(-10px);
+        }
+
+        @media (max-width: 1919px) {
+            width: 55px;
+        }
+
+        @media (max-width: 1340px) {
+            width: 6vw;
+        }
+
+        @media (max-width: 767px) {
+            width: 10vw;
         }
     }
 }
@@ -77,8 +127,35 @@
     margin-top: 40px;
 
 
+    @media (max-width: 1340px) {
+        padding-right: calc(var(--bodypaddingright) + 40px);
+        margin-top: 10px;
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: 767px) {
+        padding-right: calc(var(--bodypaddingright) + 20px);
+        padding-left: var(--bodypaddingleft);
+        margin-bottom: 30px;
+        width: auto;
+    }
+
     span {
-        padding-left: 130px;
+        //padding-left: 130px;
+    }
+}
+
+.button-pos {
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+
+    @media (max-width: 1919px) {
+        padding-left: 220px;
+    }
+
+    @media (max-width: 1340px) {
+        display: none;
     }
 }
 
@@ -94,4 +171,10 @@
     left: -300px;
     z-index: -1;
     rotate: 50deg;
+
+    @media (max-width: 1023px) {
+        width: 300px;
+        top: 380px;
+        left: -150px;
+    }
 }
