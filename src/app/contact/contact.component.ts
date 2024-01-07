@@ -43,6 +43,7 @@ export class ContactComponent {
         body: fd
       })
     this.notificationChange();
+    this.disableButton = false;
   }
 
   notificationChange() {

@@ -1,4 +1,8 @@
 {
+	"Your name is required":"Dein Name ist erforderlich",
+	"Your email is required":"Deine E-mail ist erforderlich",
+	"A message is required":"Eine Nachricht ist erforderlich",
+	"Please accept the privacy policy":"Bitte akzeptieren Sie die Datenschutzerklärung",
 	"Imprint": "Impressum",
 	"Message has been sent": "Nachricht wurde gesendet",
 	"Send message": "Nachricht senden",

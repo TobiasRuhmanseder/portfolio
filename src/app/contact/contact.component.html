@@ -20,7 +20,7 @@
                         name="name" type="text" required minlength="3" [class.input-valid]="nameInput.valid" id="name">
                     <img *ngIf="nameInput.valid" src="../../assets/img/green_hook.png" alt="">
                     <div class="error-required">
-                        <p *ngIf="nameInput.invalid && disableButton">Your name is required</p>
+                        <p *ngIf="nameInput.invalid && disableButton">{{ 'Your name is required' | translate }}</p>
                     </div>
                 </div>
                 <div class="input-container">
@@ -28,7 +28,7 @@
                         name="email" [class.input-valid]="emailInput.valid" required email>
                     <img *ngIf="emailInput.valid" src="../../assets/img/green_hook.png" alt="">
                     <div class="error-required">
-                        <p *ngIf="emailInput.invalid && disableButton">Your email is required</p>
+                        <p *ngIf="emailInput.invalid && disableButton">{{ 'Your email is required' | translate }}</p>
                     </div>
                 </div>
                 <div class="input-container">
@@ -37,7 +37,7 @@
                         [class.input-valid]="messageInput.valid"></textarea>
                     <img *ngIf="messageInput.valid" src="../../assets/img/green_hook.png" alt="">
                     <div class="error-required">
-                        <p *ngIf="messageInput.invalid && disableButton">Your email is required</p>
+                        <p *ngIf="messageInput.invalid && disableButton">{{ 'A message is required' | translate }}</p>
                     </div>
                 </div>
                 <label for="privacy-policy">
@@ -48,7 +48,7 @@
                     {{ 'and agree to the processing of my data as outlined.' | translate }}
                 </label>
                 <div class="error-required">
-                    <p *ngIf="checkboxInput.invalid && disableButton">Please accept the privacy policy</p>
+                    <p *ngIf="checkboxInput.invalid && disableButton">{{ 'Please accept the privacy policy' | translate }}</p>
                 </div>
 
                 <div class="button-container">

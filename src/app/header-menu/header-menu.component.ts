@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { AppComponent } from '../app.component';
+
 
 @Component({
   selector: 'app-header-menu',

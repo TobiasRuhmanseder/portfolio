@@ -1,0 +1,30 @@
+<div (click)="openMenu()" [class.nav-icon1-open]="menuOpen" class="nav-icon1">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div [class.mobile-menu]="menuOpen" [class.mobile-menu-out]="!menuOpen">
+    <nav>
+        <div class="language">
+            <a (click)="translate.use('de'); closeMenu();">DE</a>
+            <span>|</span>
+            <a (click)="translate.use('en'); closeMenu();">EN</a>
+        </div>
+        <div class="nav-container" (click)="closeMenu();">
+            <a href="#aboutMe">{{ 'About me' | translate }}</a>
+            <div class="border-underline"></div>
+        </div>
+        <div class="nav-container" (click)="closeMenu();">
+            <a href="#skills">Skills</a>
+            <div class="border-underline"></div>
+        </div>
+        <div class="nav-container" (click)="closeMenu();">
+            <a href="#portfolio">Portfolio</a>
+            <div class="border-underline"></div>
+        </div>
+        <div class="nav-container" (click)="closeMenu();">
+            <a href="#contact">{{ 'Contact' | translate }}</a>
+            <div class="border-underline"></div>
+        </div>
+    </nav>
+</div>
