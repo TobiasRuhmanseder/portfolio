@@ -19,10 +19,12 @@ export class MobileMenuComponent {
   }
 
   openMenu() {
-    this.menuOpen = !this.menuOpen;
-    if (this.menuOpen) window.scroll(0, 0);
-    document.body.style.overflowY = 'hidden';
-
+    if (!this.menuOpen) window.scroll(0, 0);
+    if (this.menuOpen) this.closeMenu()
+    else {
+      this.menuOpen = !this.menuOpen;
+      document.body.style.overflowY = 'hidden';
+    }
   }
 
   closeMenu() {
