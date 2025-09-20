@@ -8,24 +8,7 @@ import { Component, Input } from '@angular/core';
 export class PortfolioComponent {
 
   @Input() projects: any = [ //add the description and the translated descrition in de i18n json's manually (de, en)
-    {
-      name: 'Pokedex',
-      comp: 'JavaScript | HTML | CSS | API',
-      description: 'pokedex description',
-      img: 'pokedex.png',
-      github: 'https://github.com/TobiasRuhmanseder/Pokedex---API-exercise',
-      projectLink: 'https://www.pokedex.tobias-ruhmanseder.com/index.html',
-      otherDirection: false,
-    },
-    {
-      name: 'Join',
-      comp: 'JavaScript | HTML | CSS',
-      description: 'join description',
-      img: 'join_re.png',
-      github: 'https://github.com/TobiasRuhmanseder/join',
-      projectLink: 'https://join.tobias-ruhmanseder.com/index.html',
-      otherDirection: true,
-    },
+
     {
       name: 'El Pollo Loco',
       comp: 'JavaScript | HTML | CSS',
@@ -36,13 +19,22 @@ export class PortfolioComponent {
       otherDirection: false,
     },
     {
-      name: 'Ring of Fire',
-      comp: 'Angular | TypeScript | Firebase | HTML | CSS',
-      description: 'rof description',
-      img: 'ringoffire_re.png',
-      github: 'https://github.com/TobiasRuhmanseder/ringoffire',
-      projectLink: 'https://www.ring-of-fire.tobias-ruhmanseder.com/',
+      name: 'Join',
+      comp: 'Angular | TypeScript | Django | REST | HTML | SCSS',
+      description: 'join description',
+      img: 'join_re.png',
+      github: 'https://github.com/TobiasRuhmanseder/join',
+      projectLink: 'https://join.tobias-ruhmanseder.com/index.html',
       otherDirection: true,
+    },
+        {
+      name: 'Streamflex',
+      comp: 'Angular | TypeScript | Django | REST | PostgreSQL | Redis | HTML | SCSS | Cloud | Docker ',
+      description: 'streamflex description',
+      img: 'streamflex.png',
+      github: 'https://github.com/TobiasRuhmanseder/join',
+      projectLink: 'https://join.tobias-ruhmanseder.com/index.html',
+      otherDirection: false,
     },
   ]
 

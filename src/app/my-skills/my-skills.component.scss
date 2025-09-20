@@ -112,6 +112,14 @@ span {
     height: max-content;
     display: flex;
     align-items: center;
+
+    h2 {
+        font-size: 52px;
+
+        @media (min-width: 1919px) {
+            font-size: 58px;
+        }
+    }
 }
 
 .content-above {
@@ -140,9 +148,6 @@ span {
         width: auto;
     }
 
-    span {
-        //padding-left: 130px;
-    }
 }
 
 .button-pos {
