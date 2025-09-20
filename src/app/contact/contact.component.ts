@@ -37,7 +37,7 @@ export class ContactComponent {
 
     this.messageLoading = true;
     this.hideButton = true;
-    await fetch('https://www.portfolio.tobias-ruhmanseder.com/send_mail.php',
+    await fetch('https://tobias-ruhmanseder.com/send_mail.php',
       {
         method: 'POST',
         body: fd
