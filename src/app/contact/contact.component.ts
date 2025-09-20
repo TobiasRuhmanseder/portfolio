@@ -1,5 +1,5 @@
-import { Component, Input, OnChanges, OnInit, ViewChild } from '@angular/core';
-import { ProgressSpinnerMode, MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { Component, Input, ViewChild } from '@angular/core';
+
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -37,7 +37,7 @@ export class ContactComponent {
 
     this.messageLoading = true;
     this.hideButton = true;
-    await fetch('https://tobias-ruhmanseder.com/send_mail.php',
+    await fetch('https://tobias-ruhmanseder.de/send_mail.php',
       {
         method: 'POST',
         body: fd

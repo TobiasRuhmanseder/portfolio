@@ -33,7 +33,7 @@
 	"puzzle": "Neben der Technik bringe ich über 10 Jahre Projektmanagement-Erfahrung mit. Ich bin es gewohnt, Projekte zu strukturieren, Verantwortung zu übernehmen und im Team lösungsorientiert zu arbeiten. Meine Empathie hilft mir, Probleme früh zu erkennen, auf Menschen einzugehen und Lösungen zu finden, sowohl auf fachlicher als auch auf menschlicher Ebene.",
 	"pokedex description": "Basierend auf der PokéAPI habe ich eine einfache Bibliothek erstellt, die Pokémon-Informationen bereitstellt und katalogisiert.",
 	"join description": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren von Aufgaben durch Drag-and-Drop-Funktionen, Zuweisung von Benutzern und Kategorien.",
-	"locco description": "Ein einfaches Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Salsafalschen zu sammeln, um gegen die große Henne zu gewinnen.",
+	"locco description": "Ein einfaches Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Salsafalschen zu sammeln, um gegen die große Henne zu gewinnen. Hinweis: Das Spiel läuft aktuell am flüssigsten im Chrome-Browser.",
 	"rof description": "Ein bekanntes und einfaches Kartenspiel, basierend auf Angular. Durch Firebase können Sie sogar mit Freunden über das Internet spielen.",
-	"streamflex description": "Streamflex ist mit Abstand mein bisher größtes Fullstack-Projekt. Hier habe ich verschiedenste Technologien miteinander verbunden, genau mein Ding.Darauf bin ich wirklich stolz."
+	"streamflex description": "Streamflex ist mit Abstand mein bisher größtes Fullstack-Projekt. Hier habe ich verschiedenste Technologien miteinander verbunden, genau mein Ding. Darauf bin ich wirklich stolz."
 }

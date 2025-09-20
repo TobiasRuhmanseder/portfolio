@@ -32,7 +32,7 @@
 	"puzzle": "In addition to technology, I bring more than 10 years of project management experience. I am used to structuring projects, taking responsibility and working solution-oriented in a team. My empathy helps me to recognize problems early, respond to people and find solutions, both on a technical and human level.",
 	"pokedex description": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
 	"join description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-	"locco description": "A simple Jump-and-Run game based on an object-oriented approach. Help pepe to find coins and salsa bottles to fight against the big hen.",
+	"locco description": "A simple Jump-and-Run game based on an object-oriented approach. Help pepe to find coins and salsa bottles to fight against the big hen. The game runs most smoothly in Chrome.",
 	"rof description": "A well-known and simple card game based on Angular. Through Firebase you can even play with friends over the Internet.",
 "streamflex description": "Streamflex is by far my largest fullstack project so far. Here I connected a wide range of technologies, exactly my thing. I’m truly proud of it."
 }

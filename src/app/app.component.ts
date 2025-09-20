@@ -29,8 +29,8 @@ export class AppComponent implements OnInit {
   }
 
   checkWindowLocationHref() {
-    if (window.location.href == 'https://portfolio.tobias-ruhmanseder.com/') {
-      window.location.href = 'https://www.portfolio.tobias-ruhmanseder.com/';
+    if (window.location.href == 'https://.tobias-ruhmanseder.de/') {
+      window.location.href = 'https://www.tobias-ruhmanseder.de/';
     }
   }
 }

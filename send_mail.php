@@ -1,57 +1,29 @@
-
 <?php
 
-########### CONFIG ###############
-
-$recipient = 'tobi.r1707@gmail.com'; # Bitte hier deine E-Mail angeben
-//$redirect = '';
-
-########### CONFIG END ###########
-
-
-
-########### Instruction ###########   
-#
-#   This script has been created to send an email to the $recipient
-#   
-#  1) Upload this file to your FTP Server
-#  2) Send a POST request to this file, including
-#     [name] The name of the sender (Absender)
-#     [message] Message that should be send to you
-#
-##################################
-
-
-
-###############################
-#
-#        DON'T CHANGE ANYTHING FROM HERE!
-#
-#        Ab hier nichts mehr ändern!
-#
-###############################
-
+$recipient = 'mail@tobias-ruhmanseder.de'; 
 if (empty($recipient)) {
-    die("Bitte geben Sie die E-Mail-Adresse in Zeile 5 an.");
+    die("Keine Empfängeradresse angegeben.");
 }
 
-switch ($_SERVER['REQUEST_METHOD']) {
-    case ("OPTIONS"): //Allow preflighting to take place.
-        //header("Access-Control-Allow-Origin: *");
-        //header("Access-Control-Allow-Methods: POST");
-        //header("Access-Control-Allow-Headers: content-type");
-        //header("Access-Control-Allow-Headers: Origin");
-        exit;
-    case ("POST"): //Send the email;
-        //header("Access-Control-Allow-Origin: *");
-        $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  Portfolio";
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = isset($_POST['name']) ? strip_tags($_POST['name']) : 'Unbekannt';
+    $email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : '';
+    $messageContent = isset($_POST['message']) ? strip_tags($_POST['message']) : '';
 
-        mail($recipient, $subject, $_POST['email'],$_POST['message'], $headers);
-        //header("Location: " . $redirect); 
+    $subject = "Kontaktformular von " . $name;
+    $message = "Name: $name\nEmail: $email\n\nNachricht:\n$messageContent";
 
-        break;
-    default: //Reject any non POST or OPTIONS requests.
-        header("Allow: POST", true, 405);
-        exit;
+    $headers = "From: Portfolio <" . $recipient . ">\r\n";
+    if (!empty($email)) {
+        $headers .= "Reply-To: $email\r\n";
+    }
+
+    mail($recipient, $subject, $message, $headers);
+    echo "Nachricht erfolgreich gesendet.";
+    exit;
 }
+
+header("Allow: POST", true, 405);
+exit;
+
+?>

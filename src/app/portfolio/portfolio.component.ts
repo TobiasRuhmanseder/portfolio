@@ -15,7 +15,7 @@ export class PortfolioComponent {
       description: 'locco description',
       img: 'el_pollo.png',
       github: 'https://github.com/TobiasRuhmanseder/JS-Game-El-Pollo-Locco',
-      projectLink: 'https://el-pollo-loco.tobias-ruhmanseder.com/index.html',
+      projectLink: 'https://el-pollo-loco.tobias-ruhmanseder.de',
       otherDirection: false,
     },
     {
@@ -23,8 +23,8 @@ export class PortfolioComponent {
       comp: 'Angular | TypeScript | Django | REST | HTML | SCSS',
       description: 'join description',
       img: 'join_re.png',
-      github: 'https://github.com/TobiasRuhmanseder/join',
-      projectLink: 'https://join.tobias-ruhmanseder.com/index.html',
+      github: 'https://github.com/TobiasRuhmanseder/join-frontend',
+      projectLink: 'https://join.tobias-ruhmanseder.de',
       otherDirection: true,
     },
         {
@@ -32,8 +32,8 @@ export class PortfolioComponent {
       comp: 'Angular | TypeScript | Django | REST | PostgreSQL | Redis | HTML | SCSS | Cloud | Docker ',
       description: 'streamflex description',
       img: 'streamflex.png',
-      github: 'https://github.com/TobiasRuhmanseder/join',
-      projectLink: 'https://join.tobias-ruhmanseder.com/index.html',
+      github: 'https://github.com/TobiasRuhmanseder/stream-flex-frontend',
+      projectLink: 'https://streamflex.tobias-ruhmanseder.de',
       otherDirection: false,
     },
   ]
