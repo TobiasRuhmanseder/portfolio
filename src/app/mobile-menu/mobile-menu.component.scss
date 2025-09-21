@@ -1,5 +1,5 @@
 .mobile-menu {
-    position: absolute;
+    position: fixed;
     padding-top: 20px;
     z-index: 101;
     top: 110px;
@@ -11,11 +11,12 @@
 }
 
 .mobile-menu-out {
-    position: absolute;
+    position: fixed;
     padding-top: 20px;
     z-index: 101;
     top: 110px;
-    left: 100vw;
+    left: 0px;
+    transform: translateX(100%);
     width: 100%;
     min-height: calc(100% - 110px);
     background-color: #B6B6B6;
@@ -92,21 +93,21 @@ nav {
 
 @keyframes slide-in {
     from {
-        left: 100vw;
+        transform: translateX(100%);
     }
 
     to {
-        left: 0vw;
+        transform: translateX(0);
     }
 }
 
 @keyframes slide-out {
     from {
-        left: 0vw;
+        transform: translateX(0);
     }
 
     to {
-        left: 100vw;
+        transform: translateX(100%);
     }
 }
 
@@ -179,4 +180,14 @@ nav {
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 100;
 }

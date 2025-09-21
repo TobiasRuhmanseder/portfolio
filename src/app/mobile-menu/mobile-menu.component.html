@@ -3,6 +3,7 @@
     <span></span>
     <span></span>
 </div>
+<div class="overlay" *ngIf="menuOpen" (click)="closeMenu()"></div>
 <div [class.mobile-menu]="menuOpen" [class.mobile-menu-out]="!menuOpen">
     <nav>
         <div class="language">

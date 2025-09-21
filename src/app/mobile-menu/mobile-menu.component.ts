@@ -6,29 +6,25 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   //standalone: false,
   //imports: [],
   templateUrl: './mobile-menu.component.html',
-  styleUrl: './mobile-menu.component.scss'
+  styleUrl: './mobile-menu.component.scss',
 })
 export class MobileMenuComponent {
-
   @Input() language: string = 'de';
   @Input() menuOpen: boolean = false;
 
-
-  constructor(public translate: TranslateService) {
-
-  }
+  constructor(public translate: TranslateService) {}
 
   openMenu() {
     if (!this.menuOpen) window.scroll(0, 0);
-    if (this.menuOpen) this.closeMenu()
+    if (this.menuOpen) this.closeMenu();
     else {
       this.menuOpen = !this.menuOpen;
-      document.body.style.overflowY = 'hidden';
+      document.documentElement.style.overflowY= 'hidden';
     }
   }
 
   closeMenu() {
     this.menuOpen = !this.menuOpen;
-    document.body.style.overflowY = 'unset';
+    document.documentElement.style.overflowY= '';
   }
 }
