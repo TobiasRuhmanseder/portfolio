@@ -80,6 +80,20 @@
     }
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(197, 0, 0);
+    font-weight: 700;
+
+    &:hover{
+        text-decoration: underline;
+        
+    }
+}
+
+
+
 .distance {
     width: 80px;
 

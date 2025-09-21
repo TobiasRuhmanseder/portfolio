@@ -3,11 +3,11 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent {
-
-  @Input() projects: any = [ //add the description and the translated descrition in de i18n json's manually (de, en)
+  @Input() projects: any = [
+    //add the description and the translated descrition in de i18n json's manually (de, en)
 
     {
       name: 'El Pollo Loco',
@@ -27,7 +27,7 @@ export class PortfolioComponent {
       projectLink: 'https://join.tobias-ruhmanseder.de',
       otherDirection: true,
     },
-        {
+    {
       name: 'Streamflex',
       comp: 'Angular | TypeScript | Django | REST | PostgreSQL | Redis | HTML | SCSS | Cloud | Docker ',
       description: 'streamflex description',
@@ -35,7 +35,7 @@ export class PortfolioComponent {
       github: 'https://github.com/TobiasRuhmanseder/stream-flex-frontend',
       projectLink: 'https://streamflex.tobias-ruhmanseder.de',
       otherDirection: false,
+      pdf: '../../assets/pdf/StreamFlex_with_cred.pdf',
     },
-  ]
-
+  ];
 }
