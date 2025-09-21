@@ -1,6 +1,18 @@
 # Portfolio
 
+This portfolio showcases my projects as a Fullstack Developer, built with Angular. 
+It highlights my skills in frontend development, backend integration, and DevSecOps practices.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+
+## Life - Demo
+[Click me](https://tobias-ruhmanseder.de)
+
+## Tech Stack
+- Angular 16
+- TypeScript
+- SCSS
+- Responsive Design
 
 ## Development server
 
