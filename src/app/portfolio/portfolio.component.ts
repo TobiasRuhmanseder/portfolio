@@ -37,5 +37,14 @@ export class PortfolioComponent {
       otherDirection: false,
       pdf: '../../assets/pdf/StreamFlex_with_cred.pdf',
     },
+    {
+      name: 'PMAE',
+      comp: 'Projectmanagement App Education ',
+      description: 'PMAE description',
+      img: 'is_loading.png',
+      github: '',
+      projectLink: '',
+      otherDirection: true,
+    },
   ];
 }

@@ -8,9 +8,9 @@
         <span class="description">{{project.description | translate}}</span>
         <a class="pdf-section" *ngIf="project.pdf" [href]="project.pdf" target="_blank">HIER GEHTS ZUR ROADMAP</a>
         <div class="button-container">
-            <app-button-dark [href]="project.projectLink">Live test</app-button-dark>
+            <app-button-dark *ngIf="project.projectLink != ''" [href]="project.projectLink">Live test</app-button-dark>
             <div class="distance"></div>
-            <app-button-transparent [href]="project.github">Github</app-button-transparent>
+            <app-button-transparent *ngIf="project.github != ''" [href]="project.github">Github</app-button-transparent>
         </div>
     </div>
 </div>

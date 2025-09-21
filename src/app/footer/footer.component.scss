@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 
     @media (max-width: 1023px) {
         flex-direction: column;
@@ -59,6 +60,20 @@
 
     @media (max-width: 1023px) {
         margin-top: 30px;
+    }
+}
+
+.icon8{
+    font-size: 14px !important;
+
+    a{
+        color: white;
+        text-decoration: underline;
+
+        &:hover{
+            text-decoration: none;
+        }
+        
     }
 }
 
