@@ -6,7 +6,7 @@
         <span class="project-name">{{project.name}}</span>
         <span class="compositions">{{project.comp}}</span>
         <span class="description">{{project.description | translate}}</span>
-        <a class="pdf-section" *ngIf="project.pdf" [href]="project.pdf" target="_blank">HIER GEHTS ZUR ROADMAP</a>
+        <a class="pdf-section" *ngIf="project.pdf" [href]="project.pdf" target="_blank">{{ 'CLICK HERE FOR THE ROADMAP' | translate }}</a>
         <div class="button-container">
             <app-button-dark *ngIf="project.projectLink != ''" [href]="project.projectLink">Live test</app-button-dark>
             <div class="distance"></div>
