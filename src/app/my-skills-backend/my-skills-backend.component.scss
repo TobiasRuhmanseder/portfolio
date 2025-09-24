@@ -168,18 +168,3 @@ span {
     width: 405px;
     object-fit: contain;
 }
-
-.shadow3 {
-    width: 750px;
-    position: absolute;
-    top: 120px;
-    left: -300px;
-    z-index: -1;
-    rotate: 50deg;
-
-    @media (max-width: 1023px) {
-        width: 300px;
-        top: 380px;
-        left: -150px;
-    }
-}

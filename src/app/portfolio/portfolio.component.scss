@@ -62,21 +62,6 @@
     }
 }
 
-.shadow4 {
-    width: 50%;
-    position: absolute;
-    top: 1200px;
-    left: -3%;
-    z-index: -1;
-    rotate: 0deg;
-
-    @media (max-width: 1023px) {
-        width: 400px;
-        top: 680px;
-        left: 0px;
-    }
-}
-
 .space-between-column {
     height: 200px;
 

@@ -118,18 +118,3 @@
         width: calc(var(--bodypaddingright));
     }
 }
-
-.shadow2 {
-    width: 800px;
-    position: absolute;
-    top: -150px;
-    right: -400px;
-    z-index: 1;
-    rotate: -10deg;
-
-    @media (max-width: 1023px) {
-        width: 400px;
-        right: -200px;
-        top: -100px;
-    }
-}

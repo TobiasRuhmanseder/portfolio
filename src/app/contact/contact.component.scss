@@ -1,4 +1,5 @@
 .contact {
+    z-index: 1;
     position: relative;
     max-width: 100%;
 }
@@ -248,19 +249,4 @@ input:-webkit-autofill:active {
 .filled-line-left {
     width: var(--bodypaddingleft) !important;
     margin-right: 20px;
-}
-
-.shadow5 {
-    width: 1000px;
-    position: absolute;
-    top: -650px;
-    right: -300px;
-    z-index: -1;
-    rotate: 70deg;
-
-    @media (max-width: 767px) {
-        width: 300px;
-        right: -150px;
-        top: -100px;
-    }
 }

@@ -28,6 +28,8 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { MySkillsBackendComponent } from './my-skills-backend/my-skills-backend.component';
 import { MySoftskillsComponent } from './my-softskills/my-softskills.component';
 import { MySkillsDevsecopsComponent } from './my-skills-devsecops/my-skills-devsecops.component';
+import { NgxParticlesModule } from "@tsparticles/angular";
+
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -62,6 +64,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     MatProgressSpinnerModule,
     HttpClientModule,
+    NgxParticlesModule,
     TranslateModule.forRoot({
       defaultLanguage: 'de',
       loader: {
