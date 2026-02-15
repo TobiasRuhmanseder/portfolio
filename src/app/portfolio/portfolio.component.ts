@@ -38,9 +38,9 @@ export class PortfolioComponent {
       pdf: '../../assets/pdf/StreamFlex_with_cred.pdf',
     },
     {
-      name: 'PMAE',
-      comp: 'Projectmanagement App Education ',
-      description: 'PMAE description',
+      name: 'Body.me',
+      comp: 'Konstanz schlägt Perfektion.',
+      description: 'body.me description',
       img: 'is_loading.png',
       github: '',
       projectLink: '',
